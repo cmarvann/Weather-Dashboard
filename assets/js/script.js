@@ -9,7 +9,7 @@ console.log(searchButton);
 function geolocation(location) {
 
 // location
-var locationApi = "http://api.openweathermap.org/geo/1.0/direct?q="+location+"&appid=be81d1b33c6ad5c77820da7ad5ef1aa2"
+var locationApi = "https://api.openweathermap.org/geo/1.0/direct?q="+location+"&appid=be81d1b33c6ad5c77820da7ad5ef1aa2"
   // connects 
   fetch(locationApi)
    .then (function (response) {
