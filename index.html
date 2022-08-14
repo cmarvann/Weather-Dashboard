@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+  <head>
+    <!-- <div class="min-100-vh"> -->
+    <header class="legend">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <!--Top-->
+    <main class="flex-row d-flex">
+      <!-- <div class="col-12"> -->
+      <div class="card">
+        <h2 class="card-header">Search By City:</h2>
+        <div id="search-form" class="card-body">
+          <!-- <label class="form-label" for="search-by-city">Seach By City:</label> -->
+          <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+          <button type="search" class="btn" id="search">Search</button>
+        </div>
+        <div id="search-history"></div>
+      </div>
+
+      <!-- Box for current weather items-->
+
+      <!--Todays Weather-->
+      <div class="current-weather">
+        <div class="current" id="current-items">
+          <div class="forecast-items">
+            <div id="current-name"></div>
+          </div>
+          <div class="forecast-items">
+            <div id="current-temperature"></div>
+            <div>
+            </div>
+          </div>
+          <div class="forecast-items">
+            <div id="current-wind"></div>
+          </div>
+          <div class="forecast-items">
+            <div id="current-humidity"></div>
+          </div>
+          <div class="forecast-items">
+            <div id="current-index"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Future Forecast Section-->
+      <div class="five-day-forcast">
+        <h3>5 Day Forcast: </h3>
+        <div class="future" id="future-items">
+          <div class="forecast-days">
+            <div id="furture-name">
+
+              <div class="forecast">
+                <div id="furture-name"></div>
+                <div class="forecast-days">
+                  <div id="forecast-date-0" class="date"></div>
+                  <img id="forecast-img-0" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon"
+                    class="weather-icon">
+                  <div class="forecast-days">
+                    <div id="forecast-temperature-0"></div>
+                    <div id="forecast-wind-0"></div>
+                    <div id="forecast-humidity-0"></div>
+                  </div>
+                </div>
+
+                <div class="forecast-days">
+                  <div id="forecast-date-1" class="date"></div>
+                  <img id="forecast-img-1" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon-1"
+                    class="weather-icon">
+                  <div class="forecast-days">
+                    <div id="forecast-temperature-1"></div>
+                    <div id="forecast-wind-1"></div>
+                    <div id="forecast-humidity-1"></div>
+                  </div>
+                </div>
+
+                <div class="forecast-days">
+                  <div id="forecast-date-2" class="date"></div>
+                  <img id="forecast-img-2" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon-2"
+                    class="weather-icon">
+                  <div class="forecast-days">
+                    <div id="forecast-temperature-2"></div>
+                    <div id="forecast-wind-2"></div>
+                    <div id="forecast-humidity-2"></div>
+                  </div>
+                </div>
+
+                <div class="forecast-days">
+                  <div id="forecast-date-3" class="date"></div>
+                  <img id="forecast-img-3" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon-2"
+                    class="weather-icon">
+                  <div class="forecast-days">
+                    <div id="forecast-temperature-3"></div>
+                    <div id="forecast-wind-3"></div>
+                    <div id="forecast-humidity-3"></div>
+                  </div>
+                </div>
+
+
+                <div class="forecast-days">
+                  <div id="forecast-date-4" class="date"></div>
+                  <img id="forecast-img-4" src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon-4"
+                    class="weather-icon">
+                  <div class="forecast-days">
+                    <div id="forecast-temperature-4"></div>
+                    <div id="forecast-wind-4"></div>
+                    <div id="forecast-humidity-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

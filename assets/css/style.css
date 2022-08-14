@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'veranda', tahoma;
+    margin: 0;
+
+
+}
+header h1 {
+    font-size: 44px;
+}
+
+main {
+    display: flex;
+    /* 1st moves SBC plus down  2d moves right*/
+    margin: 20px 20px;
+    /* length of cards */
+    /* width: 50%; */
+    /* 1st space from LTB  2nd ia space from L */
+    padding: 0;
+
+}
+
+h1,
+h2 {
+    margin: 0;
+
+}
+
+.legend {
+    background-color: #2e09d2;
+    background-color: #6c6c83;
+    color: rgb(250, 243, 243);
+    /* 1st space from LTB  2nd space from L */
+    padding: 25px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.search-history {
+    background: green;
+}
+
+.search-history-item {
+
+    background: #6c6c83;
+    color: white;
+    border-radius: 7px;
+    width: 290px;
+    line-height: 0.7;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin: 0 25px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+
+}
+
+/* Today Weather */
+/* Current Weather */
+.current-weather {
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: 35px;
+    padding: 0 5px;
+    width: 60%;
+    margin-left: 6%;
+   
+
+}
+
+.current .forecast-items {
+    /* puts items in row form ln 29 -38 */
+    display: flex;
+    /* put numbers on opposite side */
+    justify-content: space-between;
+}
+ 
+button {
+    padding: 5px;
+}
+
+.btn {
+    /* design search btn */
+    background:#6c6c83;
+    color: white;
+    border-radius: 7px; 
+    width: 290px;
+    padding: 5px;
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.form-input {
+    /* design search field */
+    padding: 15px;
+    border-radius: 7px;
+    width: 290px;
+    
+ }
+
+/* Bottom items */
+.five-day-forcast {
+   font-size: 32px;
+   /* background-color: whitesmoke; */
+   color: black;
+  /* space around TLB */
+  padding: 0 5px;
+  /* margin-left: 6%; */
+  margin-left: 20%;
+  margin-top: 6px;
+  width: 81%;
+  
+}
+
+.five-day-forcast .future {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+.five-day-forcast .forecast {
+    /* Style gray boxes */
+    display: flex; 
+    flex-wrap: wrap;
+   
+   
+}
+   
+
+/* the entire box */
+.forecast .forecast-days {
+    background: #6c6c83;
+    color: whitesmoke;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    margin:  0 15px;
+    flex-direction: column;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    /* flex: 1 0 0 ; */
+  
+  }
+
+  .forecast, .forecast-days, .date, .temp, .wind, .humidity {
+      /* space around Tue-Fri */
+    padding: 5px 15px;
+    /* round Tue-Fri */
+    border-radius: 50px;
+    text-align: center;
+  
+  }
+  
+ 
+.card-body {
+    padding: 5%;
+}
+
+.min-100-vh {
+    min-height: 100vh;
+}
+.min-100-vw {
+    min-width: 100vw;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .legend {
+       font-size: 22px;
+    }
+
+    five-day-forcast .days{
+        flex-direction: column;
+        
+    }
+    
+    
+}
+
+
